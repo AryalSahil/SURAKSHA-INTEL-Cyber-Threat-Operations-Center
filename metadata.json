@@ -1,0 +1,6 @@
+{
+  "name": "SURAKSHA INTEL — Cyber Threat Operations Center",
+  "description": "Enterprise-grade Security Operations Center (SOC) and Cyber Threat Intelligence Platform simulating cyber threat radar, scam pattern detection, and citizen safety monitoring.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

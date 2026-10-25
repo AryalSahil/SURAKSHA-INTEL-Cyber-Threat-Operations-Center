@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-canvas: #080D18;
+  --color-sidebar: #0B1220;
+  --color-panel: #111E30;
+  --color-elevated: #16243A;
+  --color-border-subtle: #25364D;
+  --color-border-hover: #3B82F6;
+  
+  --color-cyber-cyan: #22D3EE;
+  --color-cyber-blue: #3B82F6;
+  --color-cyber-green: #34D399;
+  --color-cyber-amber: #FBBF24;
+  --color-cyber-red: #FB7185;
+}
+
+/* Custom Tactical Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B1220;
+}
+::-webkit-scrollbar-thumb {
+  background: #25364D;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3B82F6;
+}
+
+/* Background Grid Pattern */
+.bg-tactical-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(37, 54, 77, 0.25) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(37, 54, 77, 0.25) 1px, transparent 1px);
+}
+
+.bg-tactical-dots {
+  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(34, 211, 238, 0.15) 1px, transparent 1px);
+}
+
+/* Radar Scan Keyframes */
+@keyframes radar-sweep {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-radar-sweep {
+  animation: radar-sweep 4s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+.animate-radar-sweep-slow {
+  animation: radar-sweep 8s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+/* Tactical Glow Effects */
+.glow-cyan-sm {
+  box-shadow: 0 0 10px rgba(34, 211, 238, 0.35);
+}
+
+.glow-cyan-md {
+  box-shadow: 0 0 18px rgba(34, 211, 238, 0.5);
+}
+
+.glow-red-sm {
+  box-shadow: 0 0 10px rgba(251, 113, 133, 0.4);
+}
+
+.glow-amber-sm {
+  box-shadow: 0 0 10px rgba(251, 191, 36, 0.4);
+}
+
+/* Monospace Tabular Figures */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
