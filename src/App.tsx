@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { SimulationProvider, useSimulation } from './context/SimulationContext';
 import { TopStatusBar } from './components/layout/TopStatusBar';
 import { Sidebar, ActiveTab } from './components/layout/Sidebar';
@@ -118,6 +119,7 @@ export default function App() {
   return (
     <SimulationProvider>
       <AppContent onLogout={handleLogout} />
+      <Analytics />
     </SimulationProvider>
   );
 }
