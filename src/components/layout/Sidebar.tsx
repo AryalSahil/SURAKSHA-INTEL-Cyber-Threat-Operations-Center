@@ -191,21 +191,29 @@ export const Sidebar: React.FC<SidebarProps> = ({
         {/* Footer Branding & Integrity Tagline */}
         <div className="p-3 border-t border-[#25364D] bg-[#090E19]">
           {!collapsed || mobileOpen ? (
-            <div className="space-y-1 text-center">
-              <div className="flex items-center justify-center gap-1.5 text-xs text-[#22D3EE] font-medium">
-                <ShieldCheck className="w-3.5 h-3.5" />
-                <span>SURAKSHA INTEL</span>
+            <div className="space-y-1.5 text-center">
+              <div className="flex items-center justify-center gap-2 text-xs text-[#22D3EE] font-medium">
+                <img 
+                  src="/assets/aistudio/Suraksha_AI_Cybersecurity_Logo_f45da8e9.png" 
+                  alt="SURAKSHA AI" 
+                  className="w-5 h-5 object-contain rounded"
+                />
+                <span className="font-semibold tracking-wider">SURAKSHA INTEL</span>
               </div>
               <p className="text-[10px] font-mono text-[#94A3B8]">
                 “Observe. Analyse. Protect.”
               </p>
-              <div className="pt-1 text-[9px] font-mono text-[#34D399]">
+              <div className="pt-0.5 text-[9px] font-mono text-[#34D399]">
                 LIVE THREAT OPERATIONS
               </div>
             </div>
           ) : (
-            <div className="flex justify-center text-[#22D3EE]">
-              <ShieldCheck className="w-4 h-4" />
+            <div className="flex justify-center">
+              <img 
+                src="/assets/aistudio/Suraksha_AI_Cybersecurity_Logo_f45da8e9.png" 
+                alt="SURAKSHA AI" 
+                className="w-5 h-5 object-contain rounded"
+              />
             </div>
           )}
         </div>

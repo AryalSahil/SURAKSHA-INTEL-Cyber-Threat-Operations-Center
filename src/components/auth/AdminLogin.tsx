@@ -69,9 +69,15 @@ export const AdminLogin: React.FC<AdminLoginProps> = ({ onLoginSuccess }) => {
         <div className="bg-[#111E30] border border-[#25364D] rounded-lg shadow-[0_12px_40px_rgba(8,13,24,0.9)] overflow-hidden">
           {/* Card Header */}
           <div className="p-6 bg-[#0B1220] border-b border-[#25364D] text-center space-y-3">
-            <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#16243A] border border-[#22D3EE]/40 text-[#22D3EE] shadow-[0_0_20px_rgba(34,211,238,0.25)] relative">
-              <ShieldAlert className="w-7 h-7 text-[#22D3EE]" />
-              <div className="absolute inset-0 rounded-full border border-[#22D3EE]/30 animate-ping pointer-events-none" />
+            <div className="flex flex-col items-center justify-center">
+              <div className="relative p-2 rounded-2xl bg-[#090E19] border border-[#22D3EE]/40 shadow-[0_0_24px_rgba(34,211,238,0.25)] flex items-center justify-center">
+                <img 
+                  src="/assets/aistudio/Suraksha_AI_Cybersecurity_Logo_f45da8e9.png" 
+                  alt="SURAKSHA AI Logo" 
+                  className="w-20 h-20 sm:w-24 sm:h-24 object-contain rounded-xl"
+                />
+                <div className="absolute inset-0 rounded-2xl border border-[#22D3EE]/30 animate-pulse pointer-events-none" />
+              </div>
             </div>
 
             <div className="space-y-1">

@@ -95,9 +95,13 @@ export const TopStatusBar: React.FC<TopStatusBarProps> = ({
 
           {/* Logo & Brand Name */}
           <div className="flex items-center gap-2 sm:gap-2.5">
-            <div className="relative flex items-center justify-center w-8 h-8 rounded bg-[#111E30] border border-[#22D3EE]/40 text-[#22D3EE] shadow-[0_0_12px_rgba(34,211,238,0.25)]">
-              <ShieldAlert className="w-4 h-4 text-[#22D3EE]" />
-              <div className="absolute inset-0 rounded border border-[#22D3EE]/30 animate-pulse pointer-events-none" />
+            <div className="relative flex items-center justify-center w-8 h-8 rounded-lg bg-[#090E19] border border-[#22D3EE]/40 overflow-hidden shadow-[0_0_12px_rgba(34,211,238,0.25)] shrink-0">
+              <img 
+                src="/assets/aistudio/Suraksha_AI_Cybersecurity_Logo_f45da8e9.png" 
+                alt="SURAKSHA AI Logo" 
+                className="w-full h-full object-contain p-0.5"
+              />
+              <div className="absolute inset-0 rounded-lg border border-[#22D3EE]/20 pointer-events-none" />
             </div>
             <div className="leading-tight">
               <div className="flex items-center gap-1.5">
